@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>未来投研ラボ — 投資教育と市場観察</title>
+  <meta name="description" content="未来投研ラボは株式市場の教育・研究を提供します。投資に関する一般的な知識・市場観察・学習コンテンツを配信します。投資助言ではありません。">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--white:#ffffff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family: -apple-system,BlinkMacSystemFont,'Helvetica Neue',Segoe UI,Roboto,'Noto Sans JP',"Hiragino Kaku Gothic ProN",Meiryo,Arial,sans-serif;background:linear-gradient(180deg,#071025 0%, #07172b 100%);color:var(--white);-webkit-font-smoothing:antialiased}
+    .container{max-width:980px;margin:32px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:8px 0 0;color:var(--muted);font-size:14px}
+    .hero{background:rgba(255,255,255,0.03);padding:28px;border-radius:14px;margin-top:20px}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:20px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}.container{padding:16px}}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:18px;border-radius:12px}
+    .button{display:inline-block;padding:12px 18px;border-radius:10px;background:var(--accent);color:#042028;text-decoration:none;font-weight:600}
+    .muted{color:var(--muted);font-size:13px}
+    .section-title{font-size:16px;margin:0 0 10px}
+    ul.simple{padding-left:18px;margin:8px 0}
+    footer{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.04);display:flex;flex-direction:column;gap:10px}
+    .chip{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);font-size:13px}
+    .notice{background:rgba(255,255,255,0.02);padding:12px;border-left:4px solid rgba(255,255,255,0.06);border-radius:8px;color:var(--muted);font-size:13px}
+    .privacy{font-size:13px;color:var(--muted);text-decoration:underline}
+    .contact{font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">未来</div>
+        <div>
+          <h1>未来投研ラボ — 投資教育 &amp; 市場観察</h1>
+          <p class="lead">市場のリズムを学び、投資判断の基礎を身につけるための学習コンテンツを提供します。</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#join" class="chip">無料学習チャンネル</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="grid">
+        <div>
+          <div class="card">
+            <h2 class="section-title">本日のマーケットポイント</h2>
+            <p class="muted">当ラボは市場の観察と教育を主目的としています。以下は一般的な市場解説です。特定銘柄の売買推奨ではありません。</p>
+            <ul class="simple">
+              <li>テクノロジー関連は決算発表を受けて変動しやすい状況。</li>
+              <li>ディフェンシブセクターに資金が流入する傾向が見られる。</li>
+              <li>マクロ要因（利回り・為替）が短期的な株価変動に影響を与えています。</li>
+            </ul>
+          </div>
+
+          <div style="height:16px"></div>
+
+          <div class="card">
+            <h3 class="section-title">無料の投資学習コンテンツ</h3>
+            <p class="muted">初心者が知っておくべき基礎から、中級者向けの分析手法までを丁寧に解説します。</p>
+            <ul class="simple">
+              <li>株式の仕組み：市場の動きと参加者の視点</li>
+              <li>業界分析：成長産業の見つけ方</li>
+              <li>財務諸表の読み方：EPS・ROE・キャッシュフローの基礎</li>
+              <li>チャートの基礎：移動平均・出来高・トレンドの判断</li>
+            </ul>
+          </div>
+
+          <div style="height:16px"></div>
+
+          <div class="card">
+            <h3 class="section-title">特集：トレンド研究レポート</h3>
+            <p class="muted">なぜ市場は『織り込み』で動くのか、業界の成長ドライバーは何かといったテーマを掘り下げます。</p>
+            <p class="muted">最新号は「AI投資の潮流とサプライチェーンの注目点」。</p>
+            <a href="#reports" class="button" style="margin-top:10px;display:inline-block">レポートを読む</a>
+          </div>
+
+        </div>
+
+        <aside>
+          <div class="card">
+            <h3 class="section-title">無料学習チャンネル（LINE）</h3>
+            <p class="muted">市場観察や学習ノートを定期配信。学びを深めたい方はぜひご参加ください。</p>
+            <div style="margin-top:12px">
+              <!-- リンクはあなたのLINE URLに置き換えてください -->
+              <a id="join" href="#" class="button" onclick="alert('LINEリンクをここに設定してください');return false;">学習チャンネルに参加</a>
+            </div>
+            <p style="margin-top:10px" class="muted">注：当チャンネルは投資助言を目的としたものではありません。</p>
+          </div>
+
+          <div style="height:12px"></div>
+
+          <div class="card">
+            <h4 class="section-title">よくある質問</h4>
+            <p class="muted"><strong>Q:</strong> 無料で何が得られますか？</p>
+            <p class="muted">A: 市場観察の要点、学習資料、基礎講座の案内などを配信します。</p>
+            <p class="muted"><strong>Q:</strong> 推奨銘柄はもらえますか？</p>
+            <p class="muted">A: 当ラボでは銘柄推奨は行いません。投資判断は各自でお願いします。</p>
+          </div>
+
+          <div style="height:12px"></div>
+
+          <div class="card notice">
+            <strong>重要なご注意（必読）</strong>
+            <p style="margin:8px 0 0" class="muted">本サイトの情報は一般的な教育目的で提供されています。投資にはリスクがあります。過去の実績は将来を保証するものではありません。</p>
+          </div>
+
+        </aside>
+      </div>
+
+      <div style="height:18px"></div>
+
+      <div class="card">
+        <h3 class="section-title">当ラボの考え方</h3>
+        <p class="muted">私たちは市場を長期的な視点で観察し、投資に必要な知識と判断力を提供することを目指しています。教育を重視し、短期的な利益保証や即効性のある投資成果の約束は行いません。</p>
+      </div>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
+        <div>
+          <div class="muted contact">運営：未来投研ラボ<br>メール：<a href="mailto:contact@yourbrand.com" style="color:inherit;text-decoration:underline">contact@yourbrand.com</a></div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center">
+          <a href="#privacy" class="privacy">プライバシーポリシー</a>
+          <a href="#terms" class="privacy">利用規約</a>
+        </div>
+      </div>
+
+      <div style="margin-top:8px;color:var(--muted);font-size:13px">© 2025 未来投研ラボ. All Rights Reserved.</div>
+
+      <div id="privacy" style="margin-top:10px" class="card">
+        <h4 class="section-title">プライバシーポリシー（概要）</h4>
+        <p class="muted">当サイトはユーザーの個人情報を適切に取り扱います。お問い合わせは上記メールアドレスへご連絡ください。詳細なプライバシーポリシーは別ページで公開してください。</p>
+      </div>
+
+      <div id="terms" style="margin-top:10px" class="card">
+        <h4 class="section-title">利用規約（概要）</h4>
+        <p class="muted">本サイトの情報は一般的な教育目的で提供されています。投資判断は各自の責任で行ってください。当サイトは投資結果に関する責任を負いません。</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // 簡易的にスマホ訪問者かどうかのサンプル（必要ならカスタマイズ）
+    (function(){
+      var isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if(isMobile){
+        // ここにモバイル用の軽微な挙動を追加できます
+      }
+    })();
+  </script>
+</body>
+</html>
